@@ -1,6 +1,17 @@
-import Home from "./components/Home";
+import Home from "./components/home/Home";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Login from "./components/login/Login";
+import Register from "./components/registration/Register";
+import Donate from "./components/donate/Donate";
+import Logout from "./components/logout/Logout";
+import {
+  DONATE_PAGE,
+  LOGIN_PAGE,
+  LOGOUT_PAGE,
+  REGISTER_PAGE,
+  HOME_PAGE,
+} from "./paths/paths";
 
 function App() {
   return (
@@ -9,13 +20,19 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to={HOME_PAGE}>Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to={LOGIN_PAGE}>Zaloguj się</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to={REGISTER_PAGE}>Zarejestruj się</Link>
+            </li>
+            <li>
+              <Link to={DONATE_PAGE}>Oddaj rzeczy</Link>
+            </li>
+            <li>
+              <Link to={LOGOUT_PAGE}>Wyloguj</Link>
             </li>
           </ul>
         </nav>
@@ -23,9 +40,19 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">About</Route>
-          <Route path="/users">Users</Route>
-          <Route path="/">
+          <Route path={LOGIN_PAGE}>
+            <Login />
+          </Route>
+          <Route path={REGISTER_PAGE}>
+            <Register />
+          </Route>
+          <Route path={DONATE_PAGE}>
+            <Donate />
+          </Route>
+          <Route path={LOGOUT_PAGE}>
+            <Logout />
+          </Route>
+          <Route path={HOME_PAGE}>
             <Home />
           </Route>
         </Switch>
