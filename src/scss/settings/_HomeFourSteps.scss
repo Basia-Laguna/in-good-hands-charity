@@ -1,0 +1,81 @@
+.four-steps-header-container {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+
+  .four-steps-header-text {
+    font: normal normal normal 40px $font-base;
+    letter-spacing: -0.76px;
+    margin-bottom: 15px;
+  }
+}
+
+.four-steps-columns {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: $grey-background-color;
+  justify-content: space-between;
+  padding: 60px 300px;
+  box-sizing: border-box;
+}
+
+.four-columns {
+  text-align: center;
+  padding: 20px 22px;
+}
+
+.four-columns-icon {
+  max-width: 70px;
+  max-height: 70px;
+  padding-bottom: 5px;
+}
+
+four-columns-step-name {
+  font: normal normal normal 18px $font-base;
+  padding: 10px 0;
+}
+
+.four-columns-step-details {
+  font: normal normal normal 16px $font-base;
+  padding: 10px 0;
+}
+
+.four-columns-line {
+  text-align: center;
+  width: 30%;
+  height: 1px;
+  background-color: $text-color;
+  margin: 0 auto;
+}
+
+.four-steps-button-container {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background-color: $background-color;
+
+  .four-steps-button {
+    padding: 13px 63px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .four-steps-container {
+    padding: 30px 100px;
+  }
+
+  .four-steps-line {
+    display: none;
+  }
+
+  .four-columns {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .four-steps-columns {
+    display: block;
+  }
+}

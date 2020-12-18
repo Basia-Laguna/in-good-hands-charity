@@ -1,0 +1,3 @@
+export const HOME_HEADER = "HOME_HEADER";
+export const HOME_THREE_COLUMNS = "HOME_THREE_COLUMNS";
+export const HOME_FOUR_STEPS = "HOME_FOUR_STEPS";

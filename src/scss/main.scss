@@ -1,3 +1,13 @@
+@import "./settings/_colors.scss", "./settings/fonts";
+@import "./settings/HomeAboutUs";
+@import "./settings/HomeContactUs";
+@import "./settings/HomeFourSteps";
+@import "./settings/HomeHeader";
+@import "./settings/HomeThreeColumns";
+@import "./settings/HomeWhoWeHelp";
+@import "./settings/Home";
+@import "./settings/NavHeader";
+
 body {
   font-family: $font-base;
 }

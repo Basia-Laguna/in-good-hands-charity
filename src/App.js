@@ -12,31 +12,13 @@ import {
   REGISTER_PAGE,
   HOME_PAGE,
 } from "./paths/paths";
+import NavHeader from "./components/NavHeader";
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to={HOME_PAGE}>Home</Link>
-            </li>
-            <li>
-              <Link to={LOGIN_PAGE}>Zaloguj się</Link>
-            </li>
-            <li>
-              <Link to={REGISTER_PAGE}>Zarejestruj się</Link>
-            </li>
-            <li>
-              <Link to={DONATE_PAGE}>Oddaj rzeczy</Link>
-            </li>
-            <li>
-              <Link to={LOGOUT_PAGE}>Wyloguj</Link>
-            </li>
-          </ul>
-        </nav>
-
+        <NavHeader />
         {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
         <Switch>
