@@ -5,7 +5,13 @@ import HomeContactUs from "./HomeContactUs";
 import HomeFourSteps from "./HomeFourSteps";
 import HomeWhoWeHelp from "./HomeWhoWeHelp";
 
-import { HOME_HEADER } from "../../paths/scrollTargets";
+import {
+  HOME_ABOUT_US,
+  HOME_CONTACT,
+  HOME_FOUR_STEPS,
+  HOME_HEADER,
+  HOME_INSTITUTIONS,
+} from "../../paths/scrollTargets";
 
 function Home(props) {
   return (
@@ -16,16 +22,16 @@ function Home(props) {
       <div>
         <HomeThreeColumns />
       </div>
-      <div>
+      <div name={HOME_FOUR_STEPS}>
         <HomeFourSteps />
       </div>
-      <div>
+      <div name={HOME_ABOUT_US}>
         <HomeAboutUs />
       </div>
-      <div>
+      <div name={HOME_INSTITUTIONS}>
         <HomeWhoWeHelp />
       </div>
-      <div>
+      <div name={HOME_CONTACT}>
         <HomeContactUs />
       </div>
     </>

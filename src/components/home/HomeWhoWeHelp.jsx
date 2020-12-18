@@ -131,8 +131,10 @@ function HomeWhoWeHelp(props) {
       ))} */}
       <div>
         <button className="initiatives-button btn-border">Fundacjom</button>
-        <button className="initiatives-button">Organizacjom</button>
-        <button className="initiatives-button">Lokalnym</button>
+        <button className="initiatives-button">
+          Organizacjom pozarządowym
+        </button>
+        <button className="initiatives-button">Lokalnym zbiórkom</button>
       </div>
       <div>
         <table>

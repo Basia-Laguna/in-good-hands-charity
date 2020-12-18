@@ -23,7 +23,14 @@ import {
   scroller,
 } from "react-scroll";
 
-import { HOME_HEADER } from "../paths/scrollTargets";
+import {
+  HOME_HEADER,
+  HOME_THREE_COLUMNS,
+  HOME_FOUR_STEPS,
+  HOME_ABOUT_US,
+  HOME_INSTITUTIONS,
+  HOME_CONTACT,
+} from "../paths/scrollTargets";
 
 function HomeHeader(props) {
   let history = useHistory();
@@ -75,7 +82,7 @@ function HomeHeader(props) {
           </Link>
           <Link
             activeClass="active"
-            to="test2"
+            to={HOME_FOUR_STEPS}
             spy={true}
             smooth={true}
             offset={50}
@@ -86,7 +93,7 @@ function HomeHeader(props) {
           </Link>
           <Link
             activeClass="active"
-            to="test3"
+            to={HOME_ABOUT_US}
             spy={true}
             smooth={true}
             offset={50}
@@ -97,7 +104,7 @@ function HomeHeader(props) {
           </Link>
           <Link
             activeClass="active"
-            to="test4"
+            to={HOME_INSTITUTIONS}
             spy={true}
             smooth={true}
             offset={50}
@@ -108,7 +115,7 @@ function HomeHeader(props) {
           </Link>
           <Link
             activeClass="active"
-            to="test5"
+            to={HOME_CONTACT}
             spy={true}
             smooth={true}
             offset={50}
