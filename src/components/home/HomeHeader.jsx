@@ -19,9 +19,9 @@ function HomeHeader(props) {
 
   return (
     <>
-      {/* <div className="header-image">
+      <div className="header-image">
         <div className="hero-image"></div>
-      </div> */}
+      </div>
       <div className="header-container">
         <div
           className="header-textbox"
