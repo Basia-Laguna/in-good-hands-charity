@@ -4,6 +4,7 @@ import HomeAboutUs from "./HomeAboutUs";
 import HomeContactUs from "./HomeContactUs";
 import HomeFourSteps from "./HomeFourSteps";
 import HomeWhoWeHelp from "./HomeWhoWeHelp";
+import HomeFooter from "./HomeFooter";
 
 import {
   HOME_ABOUT_US,
@@ -33,6 +34,9 @@ function Home(props) {
       </div>
       <div name={HOME_CONTACT}>
         <HomeContactUs />
+      </div>
+      <div>
+        <HomeFooter />
       </div>
     </>
   );

@@ -18,7 +18,7 @@
 
 .about-us-text {
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   color: $text-color;
   font-size: 28px;
 
@@ -27,25 +27,30 @@
     font-size: 38px;
   }
 
+  // .about-us-decoration {
+  //   width: 100%;
+  //   height: 17px;
+  //   border: none;
+  // }
+
   .about-us-text-block {
-    text-align: end;
+    text-align: center;
+    padding: 10%;
   }
 
   .about-us-text-block-content {
-    text-align: justify;
+    text-align: center;
     padding-top: 25px;
+  }
+
+  .signature-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
   }
 
   .signature {
     padding: 15px;
-    margin-top: 20px;
-  }
-}
-
-@media only sreen and (min-width: 920px) {
-  .about-us-text {
-    width: 50%;
-    padding: 90px 70px;
   }
 }
 

@@ -54,7 +54,7 @@ function HomeHeader(props) {
             </li>
 
             <li>
-              <RouterLink to={REGISTER_PAGE}>Załóz konto</RouterLink>
+              <RouterLink to={REGISTER_PAGE}>Załóż konto</RouterLink>
             </li>
 
             <li>

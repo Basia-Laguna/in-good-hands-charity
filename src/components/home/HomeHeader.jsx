@@ -19,15 +19,14 @@ function HomeHeader(props) {
 
   return (
     <>
-      <div className="header-image">
-        <div className="hero-image"></div>
-      </div>
       <div className="header-container">
-        <div
-          className="header-textbox"
+        {/* <div
+          className="header-picture"
           style={{ backgroundImage: `url(${HomeHero})` }}
-        >
-          <div>
+        /> */}
+        <img className="header-picture" src={HomeHero} />
+        <div className="header-textbox-container">
+          <div className="header-textbox">
             <p>Zacznij pomagać!</p>
             <p>Oddaj niechciane rzeczy w zaufane ręce</p>
             <p>
@@ -36,7 +35,8 @@ function HomeHeader(props) {
           </div>
           <div className="nav-btns">
             <button className="nav-btn donate-btn" onClick={handleClick}>
-              ODDAJ RZECZY
+              ODDAJ <br />
+              RZECZY
             </button>
             <button
               className="nav-btn organise-btn"
@@ -44,12 +44,52 @@ function HomeHeader(props) {
                 handleClick();
               }}
             >
-              ZORGANIZUJ ZBIÓRKĘ
+              ZORGANIZUJ <br />
+              ZBIÓRKĘ
             </button>
           </div>
         </div>
       </div>
     </>
+
+    // <>
+    //   {/* *HEADER* */}
+    //   <div className="header-container">
+    //     <div className="header-opacity">
+    //       {/* IMAGE */}
+    //       <div
+    //         className="header-picture"
+    //         style={{ backgroundImage: `url(${HomeHero})` }}
+    //       >
+    //         {/* TEXT & BUTTONS */}
+    //         <div className="header-textbox-container">
+    //           <div className="header-textbox">
+    //             <p>Zacznij pomagać!</p>
+    //             <p>Oddaj niechciane rzeczy w zaufane ręce</p>
+    //             <p>
+    //               <img src={Decoration} classname="decoration" />
+    //             </p>
+    //           </div>
+    //           <div className="nav-btns">
+    //             <button className="nav-btn donate-btn" onClick={handleClick}>
+    //               ODDAJ <br />
+    //               RZECZY
+    //             </button>
+    //             <button
+    //               className="nav-btn organise-btn"
+    //               onClick={() => {
+    //                 handleClick();
+    //               }}
+    //             >
+    //               ZORGANIZUJ <br />
+    //               ZBIÓRKĘ
+    //             </button>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </>
   );
 }
 
